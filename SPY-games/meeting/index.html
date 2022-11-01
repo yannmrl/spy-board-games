@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Encounter
+        </title>
+        <link rel="icon" type="image/ico" href="img/icon.png"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!--<link rel="manifest" href="app.webmanifest">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/leven.js"></script>
+    </head>
+    <body onload="checkhttps()">
+        <label onclick="backToMain()" class="backArrow">&larr;</label>
+        <label onclick="displayMainInfo()" class="info">i</label>
+        <div class="container" id="container">
+            <div class="line">
+                <label class="role n" onclick="moins()">-</label>
+                <div class="role" style="
+                    background-color: #554994;
+                    color: white;
+                ">
+                    <label id="joueurs">Joueurs : 0</label>
+                </div>
+                <label class="role n" onclick="plus()">+</label>
+            </div>
+            <label class="start" id="start" onclick="start(1)">Lancer la partie</label>
+            <!--<label class="addW" onclick="events()" style="background-color: #F29393;">&Eacute;v&egrave;nements al&eacute;atoires</label>-->
+        </div>
+    </body>
+</html>

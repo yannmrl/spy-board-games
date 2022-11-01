@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Spy Games
+        </title>
+        <link rel="icon" type="image/ico" href="img/icon.png"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="manifest" href="app.webmanifest">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body onload="checkhttps()">
+        <img style="width: 50%; margin-bottom: 5%;" src="svg/icon.svg" onclick="anime()">
+        <label class="glow" style="margin: 2% 0 10% 0; font-weight: bolder;">SPY GAMES</label>
+        <div class="container" id="container" style="margin-bottom: 2%;">
+            <div class="d_game" style="border: 2px solid #BA55D377" onclick="window.location.href = 'insider/'+window.location.href.split('spy/')[1]">
+                <img src="svg/0.svg" style="width: 134px; height: 134px;">
+                <label class="l_game">Insider</label>
+            </div>
+            <div class="d_game" style="border: 2px solid #3CB37177" onclick="window.location.href = 'undernou/'+window.location.href.split('spy/')[1]">
+                <img src="svg/1.svg" style="width: 134px; height: 134px;">
+                <label class="l_game">Undernou</label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d_game" style="border: 2px solid #9932CC77" onclick="window.location.href = 'meeting/'+window.location.href.split('spy/')[1]">
+                <img src="svg/2.svg" style="width: 134px; height: 134px;">
+                <label class="l_game">Encounter</label>
+            </div>
+            <div class="d_game" style="border: 2px solid #C2EA4E" onclick="window.location.href = 'place/'+window.location.href.split('spy/')[1]">
+                <img src="svg/3.svg" style="width: 134px; height: 134px;">
+                <label class="l_game">Meddle</label>
+            </div>
+        </div>
+    </body>
+</html>

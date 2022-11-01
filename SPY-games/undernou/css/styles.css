@@ -1,0 +1,254 @@
+body {
+    height: 95vh;
+    font-size: 3vh;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    touch-action: manipulation;
+    user-select: none;
+}
+
+.line {
+    font-size: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.role {
+    border-radius: 25px;
+    padding: 5px;
+    margin: 0 2px 5px 2px;
+}
+
+.n {
+    font-size: 120%;
+}
+
+.start {
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 10%;
+    border: 1px solid #BA55D377;
+    padding: 4%;
+    color: white;
+    font-weight: bolder;
+}
+
+.addW {
+    text-align: center;
+    border-radius: 15px;
+    font-size: 65%;
+    margin-top: 5%;
+    border:1px solid #FFCCB3;
+    padding: 4%;
+    color: white;
+    font-weight: bolder;
+}
+
+.pop {
+    display: flex;
+    color: white;
+    background-color: #212121;
+    width: 80%;
+    height: 80%;
+    border: 5px solid white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pseudoInput {
+    font-size: 108%;
+    width: 85%;
+    height: 7%;
+    background: none;
+    color: white;
+    padding-left: 5%;
+    border: 3px solid white;
+    border-radius: 15px;
+    margin: 5%;
+}
+
+.okButton {
+    background-color: #FFCCB3;
+    padding: 2% 5%;
+    border-radius: 15px;
+}
+
+.players {
+    margin-bottom: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lbl_player {
+    background-color: lightgray;
+    padding: 5%;
+    border: 3px solid gray;
+    border-radius: 15px;
+    margin: 3%;
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    text-align: center;
+}
+
+.options {
+    margin-top: 5%;
+    width: 100%;
+    font-size: 140%;
+}
+
+.lbl_pseudo {
+    margin-bottom: 5%;
+}
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10% 0 10%;
+}
+
+.addM {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+.addC {
+    text-align: center;
+    font-size: medium;
+    margin-top: 5%;
+}
+
+.addWInput {
+    margin-bottom: 8%;
+    height: 3vh;
+    font-size: large;
+    border-radius: 5px;
+    border: 2px solid #FFCCB3;
+    color: white;
+    background-color: #212121;
+}
+
+.backArrow {
+    position: absolute;
+    top: 0;
+    margin-left: 2%;
+    left: 0;
+    font-size: xxx-large;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    margin-right: 3%;
+    margin-top: 3%;
+    right: 0;
+    font-size: x-large;
+    padding: 1%;
+}
+
+.event_div {
+    border: 1px solid white;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.switch_outer {
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    display: flex;
+    width: 8vh;
+    height: 4vh;
+    margin-bottom: 5%;
+    border-radius: 15vh;
+    align-items: center;
+    padding: 0 1% 0 1%;
+}
+
+.switch_inner {
+    background-color: white;
+    width: 44%;
+    border-radius: 15vh;
+    height: 80%;
+}
+
+.event_slider {
+    accent-color: #9B57A7;
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
+.desc {
+    font-size: medium;
+    margin-bottom: 7%;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0FA,
+      0 0 82px #0FA,
+      0 0 92px #0FA,
+      0 0 102px #0FA,
+      0 0 151px #0FA;
+}
+
+.flicker {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #FE7D7D,
+      0 0 82px #FE7D7D,
+      0 0 92px #FE7D7D,
+      0 0 102px #FE7D7D,
+      0 0 151px #FE7D7D;
+}
+
+/*@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
+    }
+}*/

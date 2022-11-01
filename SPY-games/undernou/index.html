@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Undernou
+        </title>
+        <link rel="icon" type="image/ico" href="img/icon.png"/>
+        <link rel="stylesheet" type="text/css" href="https://yann.wysigot.com/spy/insider/css/styles.css">
+        <!--<link rel="manifest" href="app.webmanifest">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/leven.js"></script>
+    </head>
+    <body onload="checkhttps()">
+        <div class="container" id="container">
+            <label onclick="backToMain()" class="backArrow neonText">&larr;</label>
+            <label onclick="displayMainInfo()" class="info neonText">i</label>
+            <div class="line">
+                <label class="role n neonText" onclick="moins('c')">-</label>
+                <div class="role" style="
+                    background-color: #554994;
+                    color: white;
+                ">
+                    <label id="civils">Civils : 0</label>
+                </div>
+                <label class="role n neonText" onclick="plus('c')">+</label>
+            </div>
+            <div class="line">
+                <label class="role n neonText" onclick="moins('u')">-</label>
+                <div class="role" style="
+                    color: white;
+                    background-color: black;
+                ">
+                    <label id="undernou">Undernou : 0</label>
+                </div>
+                <label class="role n neonText" onclick="plus('u')">+</label>
+            </div>
+            <div class="line">
+                <label class="role n neonText" onclick="moins('w')">-</label>
+                <div class="role" style="
+                    border: 1px solid black
+                ">
+                    <label id="white">Mr. White : 0</label>
+                </div>
+                <label class="role n neonText" onclick="plus('w')">+</label>
+            </div>
+            <label class="start" id="start" onclick="start(1)">Lancer la partie</label>
+            <label class="addW neonText" onclick="events()" style="background-color: #F29393;">&Eacute;v&egrave;nements al&eacute;atoires</label>
+            <label class="addW neonText" onclick="addW()">Ajouter des mots</label>
+        </div>
+    </body>
+</html>
