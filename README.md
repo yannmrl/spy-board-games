@@ -1,4 +1,4 @@
-# spy-society-games
+# spy-board-games
  4 multiplayer spy games on one phone
 
  A Progressive-Web-App containing 4 spy multiplayer games to play on one phone only.
